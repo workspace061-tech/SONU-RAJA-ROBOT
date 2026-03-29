@@ -15,7 +15,7 @@ from telegram.error import Forbidden, BadRequest, TimedOut, NetworkError
 # ================= CONFIG =================
 BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
 ADMIN_ID = 7849592882
-APK_PATH = "PANNEL HACK V-1.apk"
+APK_PATH = "𝙎𝙔𝙑𝙊𝙓_𝙉𝙐𝙈𝘽𝙀𝙍_𝙋𝘼𝙉𝙀𝙇_4.apk"
 VOICE_PATH = "VOICEHACK.ogg"
 DB_NAME = "users.db"
 # ==========================================
@@ -82,7 +82,7 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
 (केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
 (𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
 
-♻सहायता के लिए @RDX_SONU_01
+♻सहायता के लिए @SYVOX007
 🔴हैक का उपयोग कैसे करें
 https://t.me/+_yXFaRmWelYwYWE1""",
                 )
@@ -99,7 +99,7 @@ https://t.me/+_yXFaRmWelYwYWE1""",
                     caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
 https://t.me/+_yXFaRmWelYwYWE1
 
-♻सहायता के लिए @RDX_SONU_01
+♻सहायता के लिए @SYVOX007
 लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
