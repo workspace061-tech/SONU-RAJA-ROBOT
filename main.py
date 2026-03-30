@@ -17,6 +17,7 @@ BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
 ADMIN_ID = 7849592882
 APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
 VOICE_PATH = "VOICEHACK.ogg"
+VIDEO_PATH = "video.mp4" 
 DB_NAME = "users.db"
 # ==========================================
 
@@ -70,6 +71,22 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         return
 
+
+    # ---------- VIDEO ----------
+
+
+if os.path.exists(VIDEO_PATH):
+    try:
+        with open(VIDEO_PATH, "rb") as video:
+            await context.bot.send_video(
+                chat_id=user.id,
+                video=video,
+                caption="🎥 Yeh raha aapka video"
+            )
+    except Exception as e:
+        logging.error(f"Video send error: {e}")
+
+    
     # ---------- APK ----------
     if os.path.exists(APK_PATH):
         try:
