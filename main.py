@@ -71,21 +71,18 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
         return
 
 
-   # ---------- VIDEO ----------
+# ---------- VIDEO ----------
 VIDEO_PATH = "video.mp4"  # apni video file ka exact naam
 
 if os.path.exists(VIDEO_PATH):
     try:
         with open(VIDEO_PATH, "rb") as video:
             await context.bot.send_video(
-                chat_id=user.id,
-                video=video,
-                caption="🎥 Yeh raha aapka video"
+                chat_id=user.id, video=video, caption="🎥 Yeh raha aapka video"
             )
     except Exception as e:
         logging.error(f"Video send error: {e}")
-        
-    
+
     # ---------- APK ----------
     if os.path.exists(APK_PATH):
         try:
@@ -253,7 +250,6 @@ async def capture_user_message(update: Update, context: ContextTypes.DEFAULT_TYP
 
     user_id = user.id
 
-    
     # 🚫 STOP if admin
     if user_id == ADMIN_ID:
         return
@@ -277,7 +273,6 @@ async def capture_user_message(update: Update, context: ContextTypes.DEFAULT_TYP
         pass
 
     # Send your injector / welcome package
-    
 
 
 # ================= MAIN =================
@@ -308,4 +303,3 @@ def user_exists(user_id: int):
 
 if __name__ == "__main__":
     main()
-
