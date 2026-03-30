@@ -15,8 +15,7 @@ from telegram.error import Forbidden, BadRequest, TimedOut, NetworkError
 # ================= CONFIG =================
 BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
 ADMIN_ID = 7849592882
-VIDEO_PATH = "video.mp4"
-APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
+APK_PATH = "PANNEL HACK V-1.apk"
 VOICE_PATH = "VOICEHACK.ogg"
 DB_NAME = "users.db"
 # ==========================================
@@ -54,13 +53,12 @@ def remove_user(user_id: int):
     conn.commit()
 
 
-
 # ================= COMMON SEND =================
 async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     add_user(user.id)
 
     welcome_message = f"""
-👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑🤑💵
+👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐑𝐀𝐉𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑 🤑💵
 """
 
     try:
@@ -72,20 +70,6 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         return
 
-    # ---------- VIDEO ----------
-    VIDEO_PATH = "video.mp4"
-
-    if os.path.exists(VIDEO_PATH):
-        try:
-            with open(VIDEO_PATH, "rb") as video:
-                await context.bot.send_video(
-                    chat_id=user.id,
-                    video=video,
-                    caption="🎥 Yeh raha aapka video"
-                )
-        except Exception as e:
-            logging.error(f"Video send error: {e}")
-
     # ---------- APK ----------
     if os.path.exists(APK_PATH):
         try:
@@ -93,7 +77,14 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_document(
                     chat_id=user.id,
                     document=apk,
-                    caption="APK sent"
+                    caption="""📂 ☆𝟏𝟎𝟎% 𝐍𝐔𝐌𝐁𝐄𝐑 𝐇𝐀𝐂𝐊💸
+
+(केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
+(𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
+
+♻सहायता के लिए @RDX_SONU_01
+🔴हैक का उपयोग कैसे करें
+https://t.me/+_yXFaRmWelYwYWE1""",
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -105,12 +96,14 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_voice(
                     chat_id=user.id,
                     voice=voice,
-                    caption="Voice sent"
+                    caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
+https://t.me/+_yXFaRmWelYwYWE1
+
+♻सहायता के लिए @RDX_SONU_01
+लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
             logging.error(f"Voice send error: {e}")
-
-
 
 
 # ================= /START =================
@@ -244,6 +237,7 @@ async def capture_user_message(update: Update, context: ContextTypes.DEFAULT_TYP
 
     user_id = user.id
 
+    
     # 🚫 STOP if admin
     if user_id == ADMIN_ID:
         return
@@ -267,6 +261,7 @@ async def capture_user_message(update: Update, context: ContextTypes.DEFAULT_TYP
         pass
 
     # Send your injector / welcome package
+    
 
 
 # ================= MAIN =================
@@ -297,3 +292,4 @@ def user_exists(user_id: int):
 
 if __name__ == "__main__":
     main()
+
