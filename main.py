@@ -13,9 +13,9 @@ from telegram.ext import MessageHandler, filters
 from telegram.error import Forbidden, BadRequest, TimedOut, NetworkError
 
 # ================= CONFIG =================
-BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
+BOT_TOKEN = "8514618354:AAFVRVtoJqua2mTG2q8Tv4jkg_v7x3lmwkw"
 ADMIN_ID = 7849592882
-APK_PATH = "PANNEL HACK V-1.apk"
+APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
 VOICE_PATH = "VOICEHACK.ogg"
 DB_NAME = "users.db"
 # ==========================================
@@ -58,7 +58,7 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     add_user(user.id)
 
     welcome_message = f"""
-👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐑𝐀𝐉𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑 🤑💵
+👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑 🤑💵
 """
 
     try:
@@ -82,9 +82,9 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
 (केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
 (𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
 
-♻सहायता के लिए @RDX_SONU_01
+♻सहायता के लिए @SYVOX007
 🔴हैक का उपयोग कैसे करें
-https://t.me/+_yXFaRmWelYwYWE1""",
+https://t.me/+DmyTrk2Ulwk0YmE1""",
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -97,9 +97,9 @@ https://t.me/+_yXFaRmWelYwYWE1""",
                     chat_id=user.id,
                     voice=voice,
                     caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
-https://t.me/+_yXFaRmWelYwYWE1
+https://t.me/+DmyTrk2Ulwk0YmE1
 
-♻सहायता के लिए @RDX_SONU_01
+♻सहायता के लिए @SYVOX007
 लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
