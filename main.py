@@ -15,9 +15,9 @@ from telegram.ext import (
 from telegram.error import Forbidden, BadRequest, TimedOut, NetworkError
 
 # ================= CONFIG =================
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_TOKEN = "8514618354:AAFVRVtoJqua2mTG2q8Tv4jkg_v7x3lmwkw"
 ADMIN_ID = 7849592882
-APK_PATH = "𝐕𝐈𝐏_𝐏𝐀𝐍𝐍𝐄𝐋_𝐍𝐔𝐌𝐁𝐄𝐑_𝐇𝐀𝐂𝐊.apk"
+APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
 VOICE_PATH = "VOICEHACK.ogg"
 VIDEO_PATH = "video.mp4"
 DB_NAME = "users.db"
