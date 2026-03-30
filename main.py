@@ -54,12 +54,13 @@ def remove_user(user_id: int):
     conn.commit()
 
 
+
 # ================= COMMON SEND =================
 async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     add_user(user.id)
 
     welcome_message = f"""
-👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑 🤑💵
+👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑🤑💵
 """
 
     try:
@@ -71,17 +72,19 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         return
 
+    # ---------- VIDEO ----------
+    VIDEO_PATH = "video.mp4"
 
-# ---------- VIDEO ----------
-
-if os.path.exists(VIDEO_PATH):
-    try:
-        with open(VIDEO_PATH, "rb") as video:
-            await context.bot.send_video(
-                chat_id=user.id, video=video, caption="🎥 Yeh raha aapka video"
-            )
-    except Exception as e:
-        logging.error(f"Video send error: {e}")
+    if os.path.exists(VIDEO_PATH):
+        try:
+            with open(VIDEO_PATH, "rb") as video:
+                await context.bot.send_video(
+                    chat_id=user.id,
+                    video=video,
+                    caption="🎥 Yeh raha aapka video"
+                )
+        except Exception as e:
+            logging.error(f"Video send error: {e}")
 
     # ---------- APK ----------
     if os.path.exists(APK_PATH):
@@ -90,14 +93,7 @@ if os.path.exists(VIDEO_PATH):
                 await context.bot.send_document(
                     chat_id=user.id,
                     document=apk,
-                    caption="""📂 ☆𝟏𝟎𝟎% 𝐍𝐔𝐌𝐁𝐄𝐑 𝐇𝐀𝐂𝐊💸
-
-(केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
-(𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
-
-♻सहायता के लिए @SYVOX007
-🔴हैक का उपयोग कैसे करें
-https://t.me/+DmyTrk2Ulwk0YmE1""",
+                    caption="APK sent"
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -109,14 +105,12 @@ https://t.me/+DmyTrk2Ulwk0YmE1""",
                 await context.bot.send_voice(
                     chat_id=user.id,
                     voice=voice,
-                    caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
-https://t.me/+DmyTrk2Ulwk0YmE1
-
-♻सहायता के लिए @SYVOX007
-लगातार नंबर पे नंबर जीतना 🤑♻👑""",
+                    caption="Voice sent"
                 )
         except Exception as e:
             logging.error(f"Voice send error: {e}")
+
+
 
 
 # ================= /START =================
