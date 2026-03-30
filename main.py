@@ -15,7 +15,7 @@ from telegram.ext import (
 from telegram.error import Forbidden, BadRequest, TimedOut, NetworkError
 
 # ================= CONFIG =================
-BOT_TOKEN = "8514618354:AAFVRVtoJqua2mTG2q8Tv4jkg_v7x3lmwkw"
+BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
 ADMIN_ID = 7849592882
 APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
 VOICE_PATH = "VOICEHACK.ogg"
