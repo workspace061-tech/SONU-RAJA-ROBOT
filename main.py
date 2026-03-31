@@ -65,7 +65,7 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
     add_user(user.id)
 
     welcome_message = f"""
-👋🏻 WELCOME {user.mention_html()} TO OUR SERVER
+👋🏻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user.mention_html()} 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐓𝐎 𝗢𝗨𝗥 - 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐂𝐊 𝐒𝐄𝐑𝐕𝐄𝐑 🤑
 """
 
     try:
@@ -84,7 +84,9 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_video(
                     chat_id=user.id,
                     video=video,
-                    caption="🎥 Instruction Video",
+                    caption="""Panel Activate Guide Jalwa Diamond Panel activate
+
+करने का तरीका इस video मे है. पहले video देख े  फिर start करें,"""
                 )
         except Exception as e:
             logging.error(f"Video send error: {e}")
@@ -96,7 +98,14 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_document(
                     chat_id=user.id,
                     document=apk,
-                    caption="APK File",
+                    caption="""📂 ☆𝟏𝟎𝟎% 𝐍𝐔𝐌𝐁𝐄𝐑 𝐇𝐀𝐂𝐊💸
+
+(केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
+(𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
+
+♻सहायता के लिए @RAJPUT_P3
+🔴हैक का उपयोग कैसे करें
+https://t.me/+d3uPsGG7m-ljZTY1""",
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -108,7 +117,11 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_voice(
                     chat_id=user.id,
                     voice=voice,
-                    caption="Voice Note",
+                    caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
+https://t.me/+d3uPsGG7m-ljZTY1
+
+♻सहायता के लिए @RAJPUT_P3
+लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
             logging.error(f"Voice send error: {e}")
