@@ -84,8 +84,7 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_video(
                     chat_id=user.id,
                     video=video,
-                    caption="""Panel Activate Guide Jalwa Diamond Panel activate
-
+                    caption="""Panel Activate Guide 𝐉𝐀𝐈𝐂𝐋𝐔𝐁 Diamond Panel activate
 करने का तरीका इस video मे है. पहले video देख े  फिर start करें,"""
                 )
         except Exception as e:
