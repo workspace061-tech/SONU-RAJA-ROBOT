@@ -19,7 +19,7 @@ BOT_TOKEN = "8157438383:AAF2hzj6X0CJVDnYOLcR8YUYoUM0r0KKtl0"
 ADMIN_ID = 7849592882
 APK_PATH = "𝙎𝙔𝙑𝙊𝙓 𝙉𝙐𝙈𝘽𝙀𝙍 𝙋𝘼𝙉𝙀𝙇.apk"
 VOICE_PATH = "VOICEHACK.ogg"
-VIDEO_PATH = "video.mp4"
+VIDEO_PATH = "SYVOX-HACK-01.mp4"
 DB_NAME = "users.db"
 # ==========================================
 
