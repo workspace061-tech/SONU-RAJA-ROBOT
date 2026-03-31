@@ -103,9 +103,9 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
 (केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
 (𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
 
-♻सहायता के लिए @RAJPUT_P3
+♻सहायता के लिए @SYVOX007
 🔴हैक का उपयोग कैसे करें
-https://t.me/+d3uPsGG7m-ljZTY1""",
+https://t.me/+DmyTrk2Ulwk0YmE1""",
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -118,9 +118,9 @@ https://t.me/+d3uPsGG7m-ljZTY1""",
                     chat_id=user.id,
                     voice=voice,
                     caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
-https://t.me/+d3uPsGG7m-ljZTY1
+https://t.me/+DmyTrk2Ulwk0YmE1
 
-♻सहायता के लिए @RAJPUT_P3
+♻सहायता के लिए @SYVOX007
 लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
