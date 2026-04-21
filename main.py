@@ -102,9 +102,9 @@ async def send_welcome_package(user, context: ContextTypes.DEFAULT_TYPE):
 (केवल प्रीमियम उपयोगकर्ताओं के लिए)💎
 (𝟏𝟎𝟎% नुकसान की भरपाई की गारंटी)🧬
 
-♻सहायता के लिए @SYVOX007
+♻सहायता के लिए @NISHU_9X_PRO
 🔴हैक का उपयोग कैसे करें
-https://t.me/+DmyTrk2Ulwk0YmE1""",
+https://t.me/+u3qAXa-3H29kNjM9""",
                 )
         except Exception as e:
             logging.error(f"APK send error: {e}")
@@ -117,9 +117,9 @@ https://t.me/+DmyTrk2Ulwk0YmE1""",
                     chat_id=user.id,
                     voice=voice,
                     caption="""🎙 सदस्य 9X गुना लाभ का प्रमाण 👇🏻
-https://t.me/+DmyTrk2Ulwk0YmE1
+https://t.me/+u3qAXa-3H29kNjM9
 
-♻सहायता के लिए @SYVOX007
+♻सहायता के लिए @NISHU_9X_PRO
 लगातार नंबर पे नंबर जीतना 🤑♻👑""",
                 )
         except Exception as e:
